@@ -5,6 +5,7 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
+import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -27,6 +28,10 @@ export const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
   },
   {
     path: '**',
